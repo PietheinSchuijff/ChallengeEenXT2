@@ -1,0 +1,101 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background: #c47d02;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: auto;
+  height: calc(100% - 40px);
+  padding: 20px;
+  background-color: #272b28;
+  border-radius: 16px;
+}
+
+.chart_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #c47d02;
+  margin: 0;
+  border-radius: 16px;
+}
+
+.chart_container:nth-child(2) {
+  margin: 20px 0;
+}
+
+.charts {
+  width: 200px;
+  height: 120px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 350px) {
+  .charts {
+    width: 250px;
+    height: 180px;
+  }
+  body {
+    background-color: #272b28;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .charts {
+    width: 600px;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .chart_container {
+    width: 48%;
+    height: 45%;
+    margin: 0 5px;
+  }
+
+  .charts {
+    width: 300px;
+    height: 300px;
+  }
+
+  .big_container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .big_chart {
+    width: 800px;
+  }
+
+  .chart_container:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .charts {
+    width: 450px;
+    height: 300px;
+  }
+
+  .big_chart {
+    width: 1000px;
+  }
+}
